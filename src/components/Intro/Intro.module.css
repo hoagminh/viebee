@@ -1,0 +1,16 @@
+.bg {
+  background: radial-gradient(57.68% 50% at 50% 50%, #00b89e 0%, #007868 100%);
+}
+
+.badge {
+  border-radius: 0 0 0 8px;
+}
+
+.label {
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.shadow {
+  box-shadow: 8px 8px 5px #007868;
+}

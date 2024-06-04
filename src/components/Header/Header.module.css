@@ -1,0 +1,58 @@
+.header {
+  background: radial-gradient(57.68% 50% at 50% 50%, #00b89e 0%, #007868 100%);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: var(--mantine-spacing-md);
+  padding-right: var(--mantine-spacing-md);
+  text-decoration: none;
+  color: var(--mantine-color-white);
+  font-weight: 500;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    height: rem(42px);
+    width: 100%;
+  }
+
+  @mixin hover {
+    background: -webkit-linear-gradient(45deg, #52e5e7, #130cb7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  [data-mantine-color-scheme] &[data-active] {
+    color: var(--mantine-color-white);
+  }
+}
+
+.dropdownFooter {
+  background-color: light-dark(
+    var(--mantine-color-gray-0),
+    var(--mantine-color-dark-7)
+  );
+  margin: calc(var(--mantine-spacing-md) * -1);
+  margin-top: var(--mantine-spacing-sm);
+  padding: var(--mantine-spacing-md) calc(var(--mantine-spacing-md) * 2);
+  padding-bottom: var(--mantine-spacing-xl);
+  border-top: rem(1px) solid
+    light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+}
+
+.bg {
+  background-color: transparent;
+}
+
+.bgNavbar {
+  background-image: url("/assets/images/navbar.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.navbar {
+  border-radius: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
